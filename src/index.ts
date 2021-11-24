@@ -3,10 +3,10 @@ import createServer from "./server";
 
 const startServer = () => {
     const app = createServer();
-    const port: number = parseInt(<string>process.env.PORT, 10) || 4000;
+    const PORT: number = parseInt(<string>process.env.PORT, 10) || 5000;
 
-    app.listen(port, () => {
-        console.log(`Server running on port ${port}`);
+    app.listen(PORT, () => {
+        console.log(`Server running on port ${PORT}`);
     });
 };
 

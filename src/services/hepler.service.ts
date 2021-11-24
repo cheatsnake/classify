@@ -1,5 +1,8 @@
 import "dotenv/config";
 
+export const randomNumber = (max: number, min = 1): number =>
+    Math.round(Math.random() * (max - min)) + min;
+
 export function keyValidation(dataLength: number, key: string): string {
     let validKey = key;
     while (validKey.length < dataLength) {
@@ -8,7 +11,7 @@ export function keyValidation(dataLength: number, key: string): string {
     return validKey.slice(0, dataLength);
 }
 
-export function extraCrypt(encruptData: number[]): number[] {
+export function doubleCrypt(encruptData: number[]): number[] {
     const extraEncryptData: number[] = [];
     const secretKey: string = <string>process.env.SECRET_KEY;
 

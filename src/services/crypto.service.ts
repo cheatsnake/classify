@@ -1,4 +1,4 @@
-import { extraCrypt, keyValidation } from "./hepler.service";
+import { doubleCrypt, keyValidation } from "./hepler.service";
 
 class CryptoService {
     encryptData(data: string, key: string): string {
@@ -13,12 +13,12 @@ class CryptoService {
             encryptData.push(encryptedCode);
         }
 
-        return extraCrypt(encryptData).join(" ");
+        return doubleCrypt(encryptData).join(" ");
     }
 
     decryptData(data: string, key: string) {
         const validData = data.split(" ").map(Number);
-        const encryptData: number[] = extraCrypt(validData);
+        const encryptData: number[] = doubleCrypt(validData);
         const validKey: string = keyValidation(encryptData.length, key);
         const decryptedData: string[] = [];
 
@@ -35,10 +35,12 @@ class CryptoService {
     }
 }
 
-const Crypto = new CryptoService();
+export default new CryptoService();
 
-const msg = Crypto.encryptData("", "");
-console.log(msg);
+// const Crypto = new CryptoService();
 
-const read = Crypto.decryptData(msg, "");
-console.log(read);
+// const msg = Crypto.encryptData("", "");
+// console.log(msg);
+
+// const read = Crypto.decryptData(msg, "");
+// console.log(read);
