@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import keygen from "services/keygen.service";
+import keygen from "../services/keygen.service";
 
 type TKey = string | null;
 

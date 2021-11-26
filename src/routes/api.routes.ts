@@ -1,5 +1,5 @@
-import cryptoController from "controllers/crypto.controller";
-import keygenController from "controllers/keygen.controller";
+import cryptoController from "../controllers/crypto.controller";
+import keygenController from "../controllers/keygen.controller";
 import { Router } from "express";
 
 const router: Router = Router();

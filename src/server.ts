@@ -1,6 +1,6 @@
 import { Application } from "express";
 import cors from "cors";
-import apiRouter from "routes/api.routes";
+import apiRouter from "./routes/api.routes";
 import express from "express";
 
 export default function createServer() {

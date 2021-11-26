@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import cryptoService from "services/crypto.service";
+import cryptoService from "../services/crypto.service";
 
 type TData = String | null;
 
