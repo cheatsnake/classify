@@ -6,6 +6,6 @@ const router: Router = Router();
 
 router.post("/encrypt", cryptoController.encryptData);
 router.post("/decrypt", cryptoController.decryptData);
-router.post("/keygen", keygenController.keygen);
+router.get("/keygen", keygenController.keygen);
 
 export default router;
