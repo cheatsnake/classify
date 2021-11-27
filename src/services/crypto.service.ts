@@ -36,11 +36,3 @@ class CryptoService {
 }
 
 export default new CryptoService();
-
-// const Crypto = new CryptoService();
-
-// const msg = Crypto.encryptData("", "");
-// console.log(msg);
-
-// const read = Crypto.decryptData(msg, "");
-// console.log(read);
