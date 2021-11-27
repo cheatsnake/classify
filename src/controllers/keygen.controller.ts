@@ -6,7 +6,7 @@ type TKey = string | null;
 class KeygenController {
     keygen(req: Request, res: Response) {
         try {
-            const length = Number(req.query.length);
+            const length = Number(req.query.length) || 24;
             const symbols = Number(req.query.symbols) || 0;
             const key: TKey = keygen(length, symbols) || null;
             return res.json({ key });
