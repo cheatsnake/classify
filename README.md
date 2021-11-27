@@ -77,7 +77,7 @@ async function encryptData() {
 npm install
 ```
 ### Create .env file with secret key
-:warning: Classify uses double encryption. This means that after encrypting the message with your key, the received encrypted message is encrypted again with the key that is defined in the .env file. Therefore, each created copy of the application will have its own built-in key, and will not support decryption of its encrypted contents from another application.
+:warning: Classify uses double encryption. This means that after encrypting the message with your key, the received encrypted message is encrypted again with the key that is defined in the .env file. Therefore, each created copy of the application will have its own built-in key, and will not support decryption of encrypted messages from another application.
 ```sh
 SECRET_KEY=CreateReliableKeyUsingRandomGenerator
 ```
