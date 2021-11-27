@@ -2,7 +2,7 @@ import { randomNumber } from "./hepler.service";
 
 const symbolCodes = [58, 59, 60, 61, 62, 63, 64, 91, 92, 92, 93, 94, 95, 96];
 
-function keygen(len: number, symbols: number): string {
+function keygen(len: number = 24, symbols: number): string {
     let key = "";
     while (key.length < len) {
         key += randomChar(symbols);
