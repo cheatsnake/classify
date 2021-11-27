@@ -22,10 +22,9 @@ describe('Checking API routes', function() {
             .expect(200, {result: "data"}, done);
       });
 
-      it('POST request to "/api/keygen" should return generated key', function(done) {
+      it('GET request to "/api/keygen" should return generated key', function(done) {
         request(app)
-            .post('/api/keygen')
-            .send({length: 10, symbols: true})
+            .get('/api/keygen')
             .set('Accept', 'application/json')
             .expect(200, done);
       });
