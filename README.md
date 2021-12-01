@@ -3,6 +3,8 @@
 ![GitHub](https://img.shields.io/github/license/cheatsnake/classify?color=%235DAF83)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/cheatsnake/classify/issues)
 
+<img src='https://svgshare.com/i/cRo.svg' title='Classify banner'/>
+
 # :key: Classify
 
 Classify is open source project for enrypting text messages. Encryption is based on a simple and clear "One-time pad" method. The essence of this method is to apply the "exclusive OR" operation for each ASCII code of the message symbol in binary form and the corresponding ASCII code of the secret key.
