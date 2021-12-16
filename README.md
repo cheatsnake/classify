@@ -74,35 +74,36 @@ async function encryptData() {
 
 ## :zap: Launch local server
 
-### Install packages
+1. Install packages
 ```sh
 npm install
 ```
-### Create .env file with secret key
-:warning: Classify uses double encryption. This means that after encrypting the message with your key, the received encrypted message is encrypted again with the key that is defined in the .env file. Therefore, each created copy of the application will have its own built-in key, and will not support decryption of encrypted messages from another application.
+2. Create .env file with secret key\
 ```sh
 SECRET_KEY=CreateReliableKeyUsingRandomGenerator
 ```
-### Runs the server with Nodemon for development
+> :warning: :warning: :warning: Classify uses double encryption. This means that after encrypting the message with your key, the received encrypted message is encrypted again with the key that is defined in the .env file. Therefore, each created copy of the application will have its own built-in key, and will not support decryption of encrypted messages from another application.
+
+3. Runs the server with Nodemon for development
 ```sh
 npm run dev
 ```
-The page will reload if you make edits.\
-You will also see any lint errors in the console.\
-Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
+> The page will reload if you make edits.\
+> You will also see any lint errors in the console.\
+> Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
 
-### Launch tests
+4. Launch tests
 ```sh
 npm run test
 ```
 
-### Create a production build
+5. Create a production build
 ```sh
 npm run build
 ```
 
-### Runs the server of production build
+6. Runs the server of production build
 ```sh
 npm start
 ```
-Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
+> Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
