@@ -78,7 +78,7 @@ async function encryptData() {
 ```sh
 npm install
 ```
-2. Create .env file with secret key\
+2. Create .env file with secret key
 ```sh
 SECRET_KEY=CreateReliableKeyUsingRandomGenerator
 ```
