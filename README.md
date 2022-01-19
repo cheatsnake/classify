@@ -3,7 +3,7 @@
 ![GitHub](https://img.shields.io/github/license/cheatsnake/classify?color=%235DAF83)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/cheatsnake/classify/issues)
 
-<img src='https://svgshare.com/i/cRo.svg' title='Classify banner'/>
+<img src='https://i.ibb.co/MSwyqd8/Screenshot-173.png' title='Classify banner'/>
 
 # :key: Classify
 
