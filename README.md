@@ -1,11 +1,13 @@
+# :key: Classify
 [![Website](https://img.shields.io/website?down_color=edad0c&down_message=Classify&up_color=edad0c&up_message=Classify&url=https%3A%2F%2Fclassify-web.herokuapp.com%2F)](https://classify-web.herokuapp.com/)
 ![GitHub repo size](https://img.shields.io/github/repo-size/cheatsnake/classify?color=blue)
 ![GitHub](https://img.shields.io/github/license/cheatsnake/classify?color=%235DAF83)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/cheatsnake/classify/issues)
 
-<img src='https://i.ibb.co/MSwyqd8/Screenshot-173.png' title='Classify banner'/>
+<p align="center">⚡<a href="https://t.me/classify_tgbot">Telegram bot now available</a>⚡</p>
 
-# :key: Classify
+<p align="center"><img src='https://i.ibb.co/VTXmqRy/classify.png' title='Classify banner'/></p>
+
 
 Classify is open source project for enrypting text messages. Encryption is based on a simple and clear "One-time pad" method. The essence of this method is to apply the "exclusive OR" operation for each ASCII code of the message symbol in binary form and the corresponding ASCII code of the secret key.
 
