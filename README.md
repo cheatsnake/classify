@@ -16,9 +16,10 @@ Classify API provides unlimited access to encoding and decoding text messages us
 
 ## :lock: Encrypting data
 This endpoint accepts text message data and a secret key as input. At the output, the user receives a JSON object with an encoded message.
-```sh
+```dart
 POST https://classify-web.herokuapp.com/api/encrypt
-Content-Type:  application/json; charset=utf-8
+```
+```json
 {
     "data": "Your message",
     "key": "Your key"
@@ -27,9 +28,10 @@ Content-Type:  application/json; charset=utf-8
 
 ## :unlock: Decrypting data
 This endpoint accepts an encrypted text message and a secret key as input. At the output, the user receives a JSON object with a decrypted message.
-```sh
+```dart
 POST https://classify-web.herokuapp.com/api/decrypt
-Content-Type:  application/json; charset=utf-8
+```
+```json
 {
     "data": "Encrypted message",
     "key": "Secret key"
@@ -38,7 +40,7 @@ Content-Type:  application/json; charset=utf-8
 
 ## :key: Keygen
 The reliability of the encrypted message depends on the specified key. Ideally, the key should be randomly generated and have a message length. To do this, you can use our built-in key generator.
-```sh
+```rs
 GET https://classify-web.herokuapp.com/api/keygen
 ```
 Key length parameter:
