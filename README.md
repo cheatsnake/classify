@@ -82,7 +82,7 @@ async function encryptData() {
 ```sh
 npm install
 ```
-2. Create .env file with secret key
+2. Create `.env` file with secret key
 ```sh
 SECRET_KEY=CreateReliableKeyUsingRandomGenerator
 ```
@@ -111,3 +111,19 @@ npm run build
 npm start
 ```
 > Open [http://localhost:5000](http://localhost:5000) to view it in the browser.
+
+## :whale: Docker startup
+
+1. Change `ENV SECRET_KEY` in Dockerfile.
+
+2. Build docker image from Dockerfile:
+
+```
+docker build . -t classify
+```
+
+3. Create docker container from new image:
+
+```
+docker run -p 5000:5000 -d --name classify-server classify
+```
