@@ -18,8 +18,8 @@ Classify API provides unlimited access to encoding and decoding text messages us
 
 This endpoint accepts text message data and a secret key as input. At the output, the user receives a JSON object with an encoded message.
 
-```dart
-POST https://classify.yurace.pro/api/encrypt
+```rs
+POST /api/encrypt
 ```
 
 ```json
@@ -33,8 +33,8 @@ POST https://classify.yurace.pro/api/encrypt
 
 This endpoint accepts an encrypted text message and a secret key as input. At the output, the user receives a JSON object with a decrypted message.
 
-```dart
-POST https://classify.yurace.pro/api/decrypt
+```rs
+POST /api/decrypt
 ```
 
 ```json
@@ -49,7 +49,7 @@ POST https://classify.yurace.pro/api/decrypt
 The reliability of the encrypted message depends on the specified key. Ideally, the key should be randomly generated and have a message length. To do this, you can use our built-in key generator.
 
 ```rs
-GET https://classify.yurace.pro/api/keygen
+GET /api/keygen
 ```
 
 Key length parameter:
@@ -68,10 +68,10 @@ Presence of symbols (1 - true, 0 - false):
 
 JavaScript:
 
-```sh
-async function encryptData() {
+```js
+const encryptData = async () => {
     try {
-        const url = 'https://classify.yurace.pro/api/encrypt';
+        const url = 'http://localhost:5000/api/encrypt';
         const jsonData = JSON.stringify({
             data: "Hello world!", key: "secret"
         });
